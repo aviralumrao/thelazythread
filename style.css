@@ -17,12 +17,11 @@ body {
 
 header {
     width: auto;
-    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 45px;
-    gap: 256px;
+    padding: 10px 0px;
+    justify-content: space-around;
 }
 
 .logo {
@@ -70,10 +69,6 @@ nav a {
     align-self: center;
     display: flex;
     gap: 30px;
-}
-
-
-
 }
 
 .banner {
