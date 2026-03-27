@@ -1,0 +1,70 @@
+:root {
+    --color-rich-black: #00171f;
+    --color-verdigris: #3aafb9;
+    --color-selective-yellow: #fcba04;
+    --color-snow: #f7f2f2;
+    --color-white: #ffffff;
+    --color-red: #ff0000;
+}
+
+/* Font Family Variables */
+:root {
+    --font-k2d: 'K2D', sans-serif;
+    --font-syne: 'Syne', sans-serif;
+    --font-chivo: 'Chivo', sans-serif;
+}
+
+/*Typography Classes*/
+
+.logo-text {
+    font-family: var(--font-k2d);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading {
+    font-family: var(--font-syne);
+    font-size: 48px;
+    font-weight: 700;
+    /* Bold */
+    text-transform: uppercase;
+}
+
+.sub-heading {
+    font-family: var(--font-syne);
+    font-size: 28px;
+    font-weight: 700;
+    /* Bold */
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: var(--font-chivo);
+    font-size: 24px;
+    font-weight: 600;
+    /* Semi-Bold */
+}
+
+.light-text {
+    font-family: var(--font-chivo);
+    font-size: 14px;
+    font-weight: 400;
+    /* Regular */
+}
+
+.ultra-light {
+    font-family: var(--font-chivo);
+    font-size: 12px;
+    font-weight: 200;
+    /* Extra Light */
+}
+
+//navigstion bar
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-rich-black);
+}
