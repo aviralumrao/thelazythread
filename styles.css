@@ -111,6 +111,10 @@ a {
     justify-content: center;
 }
 
+.section {
+    margin: 20px 0;
+}
+
 /*logo styles*/
 .logo {
     gap: 20px;
@@ -125,10 +129,22 @@ a {
 
 
 /* navigation bar */
+.space-for-nav {
+    height: 95px;
+    /* Matches the nav height to prevent content jump */
+}
+
 nav {
     justify-content: space-between;
-    padding: 25px 0px;
-    align-items: baseline;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--color-snow);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0) !important;
+    transition: box-shadow 0.3s ease;
 }
 
 .menu {
