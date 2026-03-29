@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,53 @@
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="images/logo.svg" alt="The Lazy Thread Logo"></a>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="flexbox container">
+            <a class="logo flexbox" href="index.html">
+                <img src="images/logo.svg" alt="The Lazy Thread Logo">
+                <h1 class="logo-text">THE LAZY THREAD</h1>
+            </a>
+            <ul class="menu flexbox center">
+                <li class="cousine-bold underline"><a href="index.html">Home</a></li>
+                <li class="cousine-regular"><a href="about.html">About Us</a></li>
+                <li class="cousine-regular"><a href="products.html">Products</a></li>
+                <li class="cousine-regular"><a href="contact.html">Contact</a></li>
             </ul>
-            <ul class="icons">
+            <ul class="icons flexbox">
                 <li><a href="cart.html">
-                    <img src="images/bag.svg" alt="Cart Icon">
-                </a></li>
+                        <img src="images/bag.svg" alt="Cart Icon">
+                    </a></li>
                 <li><a href="account.html">
-                    <img src="images/profile.svg" alt="Account Icon">
-                </a></li>
+                        <img src="images/profile.svg" alt="Account Icon">
+                    </a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="hero">
+        <div class="carousel container">
+            <!-- The track that slides -->
+            <div class="carousel-track">
+                <div class="slide slide1">
+                    <img src="images/banners/hero-banners/1.png" alt="">
+                </div>
+                <div class="slide slide2">Slide 2</div>
+                <div class="slide slide3">Slide 3</div>
+            </div>
+        
+            <!-- The synchronized dots -->
+            <div class="carousel-dots">
+                <span class="dot dot1"></span>
+                <span class="dot dot2"></span>
+                <span class="dot dot3"></span>
+            </div>
+        </div>
+    </div>
     
+
+
 </body>
+
 </html>
