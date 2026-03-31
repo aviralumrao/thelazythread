@@ -171,7 +171,7 @@ nav {
 
 /* --- Carousel Container --- */
 .carousel {
-    height: 500px;
+    height: inherit;
     position: relative;
     overflow: hidden;
     /* Hides slides that are outside the container */
@@ -192,7 +192,7 @@ nav {
 .slide {
     width: 33.3333%;
     /* Takes up exactly 1/3 of the track */
-    height: 500px;
+    height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,7 +251,7 @@ nav {
 /* --- Dots Container --- */
 .carousel-dots {
     position: absolute;
-    bottom: 20px;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -393,11 +393,12 @@ nav {
     opacity: 1;
 }
 
+
+
 /* latest products card */
 
 .latest {
     justify-content: space-between;
-
 }
 
 .pcard {
@@ -408,14 +409,17 @@ nav {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     flex-direction: column;
-    
-    text-align: left;
 }
 
 .pcard img {
     width: 100%;
     object-fit: fill;
     border-radius: inherit;
+}
+
+.pcard-content {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .tags-holder {
@@ -436,4 +440,41 @@ nav {
     text-decoration: line-through;
     text-decoration-color: var(--color-red);
     text-underline-offset: 3px; 
+}
+
+/* Phone Media */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .section {
+        margin: 50px 20px;
+    }
+
+    nav{
+        padding: 15px 20px;
+    }
+
+    .logo{
+        gap: 10px;
+    }
+    .logo-text{
+        font-size: 18px;
+    }
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .menu{
+        display: none;
+    }
+    .icons{
+        gap: 20px;
+    }
+
+    .hero{
+        height: 230px;
+        border-radius: 20px;
+    }
 }
