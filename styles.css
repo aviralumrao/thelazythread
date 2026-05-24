@@ -91,7 +91,7 @@ h3 {
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--color-snow);
+    background-color: var(--color-white);
     color: var(--color-rich-black);
 }
 
@@ -467,4 +467,19 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    background-color: var(--color-snow);
+    border-radius: 40px;
+    padding: 10px 0px;
+}
+
+
+.stat2, .stat3 {
+    border-left: 1px solid var(--color-rich-black);
+    border-right: 1px solid var(--color-rich-black);
 }
