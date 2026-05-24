@@ -399,17 +399,16 @@ nav {
 /* latest products card */
 
 .latest {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
 }
 
 .pcard {
-    width: 300px;
-    height: 450px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    flex-direction: column;
 }
 
 .pcard img {
@@ -419,11 +418,15 @@ nav {
 }
 
 .pcard-content {
+    padding: 15px 20px;
+    display: flex;
     flex-direction: column;
+    gap: 6px;
     align-items: flex-start;
 }
 
 .tags-holder {
+    display: flex;
     gap: 10px;
 }
 
@@ -434,6 +437,8 @@ nav {
 }
 
 .price {
+    display: flex;
+    align-items: baseline;
     gap: 10px;
 }
 
@@ -443,55 +448,23 @@ nav {
     text-underline-offset: 3px;
 }
 
-/* Phone Media */
-/* @media screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+.discounted-price {
+    color: var(--color-red);
+    font-weight: 700;
+}
 
-    .section {
-        margin: 50px 20px;
-    }
-
-    nav {
-        padding: 15px 20px;
-    }
-
-    .logo {
-        gap: 10px;
-    }
-
-    .logo-text {
-        font-size: 18px;
-    }
-
-    .logo img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .icons {
-        gap: 20px;
-    }
-
-    .hero {
-        height: 230px;
-        border-radius: 20px;
-    }
-
-    .categories {
-        flex-wrap: wrap;
-        ;
-    }
-
-    .card {
-        width: ;
-        height: 200px;
-        margin-bottom: 20px;
-
-    }
-} */
+/* button styles */
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-color: var(--color-rich-black);
+    color: var(--color-white);
+    border: none;
+    border-radius: 2px;
+    font-family: var(--font-chivo);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
