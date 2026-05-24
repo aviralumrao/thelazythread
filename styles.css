@@ -469,6 +469,7 @@ button {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/*stats card*/
 .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -482,4 +483,17 @@ button {
 .stat2, .stat3 {
     border-left: 1px solid var(--color-rich-black);
     border-right: 1px solid var(--color-rich-black);
+}
+
+/* offer banner */
+.offer{
+    margin: 0px;
+    max-height: 700px;
+    overflow : hidden;
+}
+
+.offer img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
