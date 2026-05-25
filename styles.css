@@ -117,7 +117,7 @@ a {
 }
 
 .section {
-    margin: 100px 100px;
+    margin: 50px 100px;
 }
 
 /* button styles */
@@ -149,14 +149,14 @@ button {
 }
 
 .logo img {
-    width: 60px;
-    height: 60px;
+   aspect-ratio: 1 / 1;
+    width: 40px;
 }
 
 
 /* navigation bar */
 .space-for-nav {
-    height: 60px;
+    height: 50px;
     /* Matches the nav height to prevent content jump */
 }
 
@@ -191,8 +191,14 @@ nav {
 /* ______________________________________________________ */
 
 /* --- Carousel Container --- */
+
+.hero{
+    margin: 0px 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 .carousel {
-    height: inherit;
     position: relative;
     overflow: hidden;
     /* Hides slides that are outside the container */
