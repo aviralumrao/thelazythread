@@ -23,7 +23,7 @@
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-      margin: 0px;
+    margin: 0px;
 }
 
 .heading {
@@ -32,7 +32,7 @@
     font-weight: 700;
     /* Bold */
     text-transform: uppercase;
-      margin: 0px;
+    margin: 0px;
 }
 
 .sub-heading {
@@ -41,14 +41,14 @@
     font-weight: 700;
     /* Bold */
     text-transform: uppercase;
-      margin: 0px;
+    margin: 0px;
 }
 
 .text {
     font-family: var(--font-chivo);
     font-size: 24px;
     font-weight: 600;
-      margin: 0px;
+    margin: 0px;
     /* Semi-Bold */
 }
 
@@ -56,15 +56,15 @@
     font-family: var(--font-chivo);
     font-size: 14px;
     font-weight: 400;
-      margin: 0px;
+    margin: 0px;
     /* Regular */
 }
 
 .ultra-light {
     font-family: var(--font-chivo);
     font-size: 12px;
-    font-weight: 200;
-      margin: 0px;
+    font-weight: 100;
+    margin: 0px;
     /* Extra Light */
 }
 
@@ -73,7 +73,7 @@
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-      margin: 0px;
+    margin: 0px;
 }
 
 .cousine-bold {
@@ -81,7 +81,7 @@
     font-weight: 700;
     font-size: 18px;
     font-style: normal;
-      margin: 0px;
+    margin: 0px;
 }
 
 .underline {
@@ -157,7 +157,7 @@ button {
 }
 
 .logo img {
-   aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;
     width: 40px;
 }
 
@@ -200,12 +200,13 @@ nav {
 
 /* --- Carousel Container --- */
 
-.hero{
+.hero {
     margin: 0px 100px;
     height: 100vh;
     display: flex;
     align-items: center;
 }
+
 .carousel {
     position: relative;
     overflow: hidden;
@@ -499,19 +500,20 @@ nav {
 }
 
 
-.stat2, .stat3 {
+.stat2,
+.stat3 {
     border-left: 1px solid var(--color-rich-black);
     border-right: 1px solid var(--color-rich-black);
 }
 
 /* offer banner */
-.offer{
+.offer {
     margin: 0px;
     height: 50vh;
-    overflow : hidden;
+    overflow: hidden;
 }
 
-.offer img{
+.offer img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -524,29 +526,30 @@ nav {
     gap: 20px;
 }
 
-.spoffer > .div1 , .div2{
-     overflow: hidden;
-     border-radius: 50px;
-     aspect-ratio: 16 / 9;
+.spoffer>.div1,
+.div2 {
+    overflow: hidden;
+    border-radius: 50px;
+    aspect-ratio: 16 / 9;
 }
 
-.div1 > img{
+.div1>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.spoffer > .div2{
+.spoffer>.div2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2px;
-    text-align : center;
+    text-align: center;
     padding: 0px 32px;
 }
 
 /* last shop section */
-.shop-now{
+.shop-now {
     background: linear-gradient(135deg, red, pink);
     border-radius: 40px;
     flex-direction: column;
@@ -568,25 +571,48 @@ footer {
     background: linear-gradient(180deg, var(--color-white), var(--color-rich-black));
 }
 
-.features{
+.features {
     justify-content: space-between;
     padding: 50px 0px;
     color: var(--color-white);
 }
 
-.feature{
+.feature {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
 }
 
-.feature > img{
+.feature>img {
     aspect-ratio: 1 / 1;
-    height : 60px
+    height: 60px;
 }
 
 
+/*last section */
 
+.last-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--color-rich-black);
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 30px 100px;
+    text-align: center;
+}
 
+.last-section ul {
+    list-style: none;
+}
 
+.last-section .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
+.last-section .social-icons>img {
+    aspect-ratio: 1 / 1;
+    height: 30px;
+}
